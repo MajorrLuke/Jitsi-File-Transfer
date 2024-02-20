@@ -12,9 +12,6 @@ sudo cp -f app.bundle.min.js /usr/share/jitsi-meet/app.bundle.min.js
 #copy jitsiUploadFile middleware to /opt
 sudo cp -f jitsiUploadFile /opt/jitsiUploadFile
 
-#install node dependencies
-npm install --prefix /opt/jitsiUploadFile
-
 #copy service files to system
 sudo cp -f jitsiCleanFiles.service /etc/systemd/system/jitsiCleanFiles.service
 sudo cp -f jitsiUploadFile.service /etc/systemd/system/jitsiUploadFile.service

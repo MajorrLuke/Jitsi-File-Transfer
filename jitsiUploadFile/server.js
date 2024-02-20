@@ -45,7 +45,7 @@ const checkAuthorization = (req, res, next) => {
   //console.log(req.headers);
   
   // Check if the authorization token and UpPath header are valid
-  if (authToken === 'Bearer 3991fc9776f861af6f07d9f6f805a5fef6af62c9bf051f497a98b2c64800a9bd' || req.query.session) {
+  if (authToken === 'Bearer a98d3d9824a102245d5b4dcef4b22406c42b6b98c7326b2a56682b255d0c8431' || req.query.session) {
     next(); // Continue with the request if authorized
   } else {
     res.status(401).send('Unauthorized'); // Respond with 401 Unauthorized if not authorized
