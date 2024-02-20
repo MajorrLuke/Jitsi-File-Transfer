@@ -1,0 +1,15 @@
+[Unit]
+Description=Your Node.js Application
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /opt/jitsiUploadFile/server.js
+Restart=always
+User=nobody
+Group=nogroup
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/opt/attimoUploadFile/
+
+[Install]
+WantedBy=multi-user.target

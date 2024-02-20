@@ -1,0 +1,12 @@
+[Unit]
+Description=Cleanup Script
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/jitsiUploadFile/cleanOld.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
