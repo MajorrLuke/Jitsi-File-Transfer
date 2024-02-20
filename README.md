@@ -1,4 +1,4 @@
-# jitsiFileUpload
+# Jitsi File Transfer
 
 Interface modification, Middleware API for file upload, and service for destruction of remaining files on Jitsi.
 
